@@ -33,6 +33,6 @@ A full-stack web application built with the MERN stack (MongoDB, Express, React,
 3. **Configure Environment Variables**:
    In the `server/` directory, ensure you have a `.env` file with:
    ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
+   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/e-commerce-app?retryWrites=true&w=majority
+PORT=5000
    ```
