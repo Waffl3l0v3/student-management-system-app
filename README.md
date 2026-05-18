@@ -15,23 +15,6 @@ A full-stack web application built with the MERN stack (MongoDB, Express, React,
 - **Backend**: Node.js, Express.js, Mongoose, CORS, dotenv.
 - **Database**: MongoDB.
 
-## 📁 Project Structure
-```text
-student-management-system/
-├── client/              # React frontend (Vite)
-│   ├── src/             # Frontend source code
-│   │   ├── components/  # React components (StudentCard, StudentForm, etc.)
-│   │   ├── App.jsx      # Main application logic
-│   │   └── index.css    # Premium design system styling
-│   └── vite.config.js   # Vite config with API proxy
-├── server/              # Node.js/Express backend
-│   ├── controllers/     # Route logic (studentController.js)
-│   ├── models/          # Mongoose schemas (Student.js)
-│   ├── routes/          # API endpoints (studentRoutes.js)
-│   ├── .env             # Environment variables (Mongo URI, Port)
-│   └── server.js        # Server entry point
-└── package.json         # Root orchestrator for concurrent execution
-```
 
 ## 🛠️ Installation & Setup
 
@@ -53,30 +36,3 @@ student-management-system/
    MONGO_URI=your_mongodb_connection_string
    PORT=5000
    ```
-
-## 🚦 Running the Application
-
-To start both the client and server concurrently, run from the root directory:
-```bash
-npm start
-```
-- **Frontend**: Runs on `http://localhost:5173/`
-- **Backend API**: Runs on `http://localhost:5000/`
-
-## 📡 API Endpoints (Backend)
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET    | `/api/students` | Fetch all students |
-| POST   | `/api/students` | Create a new student |
-| PUT    | `/api/students/:id` | Update a student by ID |
-| DELETE | `/api/students/:id` | Delete a student by ID |
-
-## 🎨 Design Theme
-The application utilizes a rich, dynamic "Cyberpunk / Modern Dark Mode" aesthetic:
-- **Backgrounds**: Slate-colored gradients (`#0f172a`).
-- **Cards**: Glassmorphism translucent effects with subtle blurs.
-- **Typography**: `Inter` font from Google Fonts.
-- **Interactions**: Smooth hover effects and micro-animations for buttons and cards.
-
----
-*Created as a comprehensive demonstration of the MERN stack architecture.*
